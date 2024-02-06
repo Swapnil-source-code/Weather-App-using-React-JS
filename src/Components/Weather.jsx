@@ -1,4 +1,3 @@
-// import React from 'react'
 import './WeatherStyle.css'
 import search_image from '../assets/images/search.png'
 import clear_image from '../assets/images/clear.png'
@@ -12,9 +11,7 @@ import { useState } from 'react'
 
 
 
-function Weather() {
-
-  const apikey = "45f3272173e4c40b653fbb7a40bd08ec";
+const Weather = () => {
 
   const [wicon, setWicon] = useState(clouds_image);
 
@@ -26,7 +23,7 @@ function Weather() {
       return 0;
     }
 
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${apikey}`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${import.meta.env.VITE_API_KEY}`;
     
     let response = await fetch(url);
 
@@ -83,7 +80,6 @@ function Weather() {
         setWicon(clear_image);
       }
 
-      
     }
     
   }
