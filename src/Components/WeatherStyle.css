@@ -3,13 +3,17 @@
   height: 100vh;
   background: linear-gradient(135deg, #eeaeca, #94bbe9);
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .card{
   width: 80%;
   max-width: 400px;
   background: rgba(255, 255, 255, 0.61);
   color: #ffffff;
-  margin: 100px auto 0;
+  /* margin: 100px auto 0; */
+  margin-top: 50px;
   border-radius: 20px;
   padding: 30px 25px;
   text-align: center;
@@ -23,7 +27,7 @@
 .search input{
   border: 0;
   outline: 0;
-  background: #b4b7de66;
+  background: #ebfffce3;
   color: #555;
   padding: 10px 25px;
   height: 50px;
@@ -35,7 +39,7 @@
 .search button{
   border: 0;
   outline: 0;
-  background: #b4b7de66;
+  background: #ebfffce3;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -55,7 +59,7 @@
   color: rgb(126 126 126);
 }
 .weather h2{
-  font-size: 60px;
+  font-size: 75px;
   font-weight: 500;
   color: rgb(126 126 126);
 }
@@ -80,7 +84,7 @@
   font-weight: 600;
 }
 .humidity, .wind{
-  font-size: 28px;
+  font-size: 27px;
   margin-top: -6px;
   color: rgb(126 126 126);
 }
@@ -94,4 +98,71 @@
   color: #ff0000eb;
   margin-left: 10px;
   display: none;
+}
+
+
+@media (min-width: 481px) and (max-width: 768px)  {
+  .card{
+    width: 50%;
+    margin-top: 15px;
+  }
+  .search input{
+    padding: 10px 20px;
+  }
+  .weather-icon {
+    width: 135px;
+    margin-top: 0px;
+  }
+  .weather h1 {
+    font-size: 55px;
+  }
+  .weather h2 {
+    font-size: 55px;
+  }
+  .details{
+    margin-top: 45px;
+  }
+  .humidity, .wind{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card{
+    width: 90%;
+    margin-top: 25px;
+  }
+  .search input{
+    padding: 10px 15px;
+    margin-right: 16px;
+    font-size: 17px;
+    margin-right: 10px;
+    width: 93px;
+  }
+  .weather-icon {
+    width: 130px;
+    margin-top: 10px;
+  }
+  .weather h1 {
+    font-size: 55px;
+  }
+  .weather h2 {
+    font-size: 55px;
+  }
+  .details{
+    margin-top: 20px;
+  }
+  .col {
+    display: block;
+    text-align: center;
+  }
+  .col img {
+    width: 30px;
+  }
+  .infodata{
+    margin-top: 10px;
+  }
+  .humidity, .wind {
+    font-size: 16px;
+  }
 }
