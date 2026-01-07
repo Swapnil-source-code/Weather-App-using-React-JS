@@ -8,7 +8,7 @@
 
 
 ### 🛠 Tech Used
-HTML, CSS, JavaScript.
+HTML, CSS, JavaScript, React.
 
 ### ✨ Features
 - Showing Weather 
