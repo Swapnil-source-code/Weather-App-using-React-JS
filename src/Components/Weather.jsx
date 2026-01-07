@@ -17,7 +17,8 @@ const Weather = () => {
 
   const search  = async () => {
     const element = document.getElementsByClassName('cityInput');
-
+    const city = element[0].value;
+    
     if (element[0].value === "")
     {
       return 0;
