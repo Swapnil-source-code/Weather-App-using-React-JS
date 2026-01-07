@@ -22,10 +22,8 @@ const Weather = () => {
     {
       return 0;
     }
-
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${import.meta.env.VITE_API_KEY}`;
     
-    let response = await fetch(url);
+    let response = await fetch(`/.netlify/functions/weather?city=${city}`);
 
     if (response.status == 404) {
       document.querySelector('.error').style.display = "block";
