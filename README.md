@@ -1,7 +1,7 @@
 # Weather-App-using-React
 
 ### 🔗 Live Demo
--
+https://weather-app-developed-in-react.netlify.app
 
 ### 📸 Screenshots
 ![My application screenshot](/src/assets/images/wa-screenshot.JPG)
@@ -17,5 +17,13 @@ HTML, CSS, JavaScript, React.
 - Clean UI
 
 ### 📂 How to Run
-npm install <br/>
-npm start OR npm run dev
+```bash
+ npm install 
+```
+```bash
+ npm start
+```
+ or
+```bash
+ npm run dev
+```
